@@ -41,7 +41,7 @@ public class TstVeic {
 
         // Criando um novo objeto Carga com dados inseridos pelo usuário
         Carga carga = new Carga(placaCarga, marcaCarga, modeloCarga, corCarga, qtdRodasCarga, velocMaxCarga, null, dataCadastroCarga, taraCarga, cargaMaxCarga);
-        carga.setMotor(passeio.getMotor()); // Usando o mesmo motor do veículo de passeio
+        carga.setMotor(carga.criarMotor(qtdPistoes, potencia)); // Criando o mo100tor carga
 
         // Exibindo todos os dados do veículo de Passeio
         System.out.println("\nDados do veículo de Passeio:\n");
